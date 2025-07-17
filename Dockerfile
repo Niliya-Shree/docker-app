@@ -7,4 +7,6 @@ RUN mkdir -p docker-testapp
 
 COPY . /docker-testapp
 
+RUN npm install
+
 CMD ["node","/docker-testapp/server.js"]
